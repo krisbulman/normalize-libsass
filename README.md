@@ -1,6 +1,6 @@
 The libsass compatible port of normalize.css
 
-This project was created because libsass does not import .css files. This can be an annoying problem when using a package manager such as bower. This port also leverages Sass variables for optional customization.
+This project was created because libsass does not import .css files. This can be an annoying problem when using a package manager such as bower. This port also leverages Sass variables for optional customization and inspired by [JohnAlbin's Compass port](https://github.com/JohnAlbin/normalize-scss).
 
 # normalize.css v3
 
