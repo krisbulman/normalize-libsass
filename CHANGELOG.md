@@ -1,3 +1,7 @@
+=== normalize-libsass 3.0.2-alpha.2+normalize.3.0.2 (February 9, 2015)
+* Fixed critical bug printing units with libsass
+* Added additional browser support conditionals for ie
+
 === normalize-libsass 3.0.2-alpha.1+normalize.3.0.2 (February 8, 2015)
 * Added basic default variables
 * Added Sass list map for ie styles added conditionally based on browser support
