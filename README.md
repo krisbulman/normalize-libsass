@@ -29,7 +29,7 @@ To use the libsass port of Normalize, simply:
 
 1. Copy the _normalize.scss file to your Sass directory
 2. Import the partial into your main Sass file with @import "normalize";
-3. and follow the "About normalize.css" article's suggestions:
+and follow the "About normalize.css" article's suggestions:
   * Approach 1: use _normalize.scss as a starting point for your own project's base Sass, customising the values to match the design's requirements.
   * Approach 2: include _normalize.scss untouched and build upon it, overriding the defaults later in your Sass when necessary.
 
