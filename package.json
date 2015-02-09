@@ -1,7 +1,7 @@
 {
   "name": "normalize-libsass",
   "version": "3.0.2",
-  "description": "Normalize-libsass as a node packaged module",
+  "description": "A libsass compatible sass port of normalize.css, a collection of HTML element and attribute style-normalizations.",
   "style": "_normalize.scss",
   "files": [
     "_normalize.scss"

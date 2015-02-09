@@ -1,5 +1,5 @@
 {
   "name": "Normalize-libsass",
-  "description": "This is the libsass compatible version of Normalize.css.",
+  "description": "A libsass compatible sass port of normalize.css, a collection of HTML element and attribute style-normalizations.",
   "tags": ["normalize", "reset", "typography", "design", "ui"]
 }

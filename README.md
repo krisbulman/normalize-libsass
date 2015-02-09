@@ -16,8 +16,8 @@ normalizing.
 ## Install
 
 * Download directly from the [project page](https://github.com/krisbulman/normalize-libsass/releases).
-* Install with [Bower](http://bower.io/): bower install --save normalize.scss
-* Install with [Component](http://component.io/): component install krisbulman/normalize-scss
+* Install with [Bower](http://bower.io/): bower install --save normalize-libsass
+* Install with [Component](http://component.io/): component install krisbulman/normalize-libsass
 
 No other styles should come before _normalize.scss.
 
