@@ -1,8 +1,24 @@
 {
-  "name": "normalize.css",
-  "repo": "necolas/normalize.css",
-  "version": "3.0.2",
-  "styles": ["normalize.css"],
-  "author": "Nicolas Gallagher",
-  "license": "MIT"
+  "name": "normalize-libsass",
+  "repo": "krisbulman/normalize-libsass",
+  "description": "This is the libsass compatible version of Normalize.css.",
+  "version": "3.0.2-alpha.1+normalize.3.0.2",
+  "author": [
+    "Nicolas Gallagher",
+    "Kris Bulman"
+  ],
+  "keywords": [
+    "normalize",
+    "reset",
+    "typography",
+    "design",
+    "ui"
+  ],
+  "dependencies": {},
+  "development": {},
+  "license": [
+    "MIT",
+    "GPLv2"
+  ],
+  "styles": ["_normalize.scss"]
 }

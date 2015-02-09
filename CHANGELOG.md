@@ -1,3 +1,9 @@
+=== normalize-libsass 3.0.2-alpha.1+normalize.3.0.2 (February 8, 2015)
+* Added basic default variables
+* Added Sass list map for ie styles added conditionally based on browser support
+
+== normalize.css change log
+
 === HEAD
 
 === 3.0.2 (October 4, 2014)

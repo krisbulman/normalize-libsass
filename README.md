@@ -1,3 +1,7 @@
+The libsass compatible port of normalize.css
+
+This project was created because libsass does not import .css files. This can be an annoying problem when using a package manager such as bower. This port also leverages Sass variables for optional customization.
+
 # normalize.css v3
 
 Normalize.css is a customisable CSS file that makes browsers render all
@@ -11,15 +15,23 @@ normalizing.
 
 ## Install
 
-* [npm](http://npmjs.org/): `npm install --save normalize.css`
-* [Component(1)](https://github.com/component/component/): `component install necolas/normalize.css`
-* [Bower](http://bower.io/): `bower install --save normalize.css`
-* [Download](http://necolas.github.io/normalize.css/latest/normalize.css).
+* Download directly from the [project page](https://github.com/krisbulman/normalize-libsass/releases).
+* Install with [Bower](http://bower.io/): bower install --save normalize.scss
+* Install with [Component](http://component.io/): component install krisbulman/normalize-scss
 
-No other styles should come before Normalize.css.
+No other styles should come before _normalize.scss.
 
-It is recommended that you include the `normalize.css` file as untouched
-library code.
+## How to use it
+
+Prerequisite reading: [About normalize.css article](http://nicolasgallagher.com/about-normalize-css/).
+
+To use the libsass port of Normalize, simply:
+
+1. Copy the _normalize.scss file to your Sass directory
+2. Import the partial into your main Sass file with @import "normalize";
+3. and follow the "About normalize.css" article's suggestions:
+  * Approach 1: use _normalize.scss as a starting point for your own project's base Sass, customising the values to match the design's requirements.
+  * Approach 2: include _normalize.scss untouched and build upon it, overriding the defaults later in your Sass when necessary.
 
 ## What does it do?
 
@@ -81,9 +93,11 @@ inherited by `legend`.
 
 ## Contributing
 
-Please read the CONTRIBUTING.md
+Please read Necolas' [contributing guidelines](https://github.com/krisbulman/normalize-libsass/blob/master/CONTRIBUTING.md).
 
 ## Acknowledgements
 
 Normalize.css is a project by [Nicolas Gallagher](https://github.com/necolas),
 co-created with [Jonathan Neal](https://github.com/jonathantneal).
+
+This libsass compatible port is a project by Kris Bulman.

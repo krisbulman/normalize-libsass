@@ -1,4 +1,27 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/* normalize-libsass 3.0.2-alpha.1+normalize.3.0.2 | MIT/GPLv2 License | lb.cm/normalize-libsass */
+
+// Variables and Imports
+
+// The font size set on the root html element.
+$base-font-size: 16px !default;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 24px !default;
+
+// The font size for h1.
+$h1-font-size: 2 * $base-font-size !default;
+
+// The length unit in which to output vertical rhythm values.
+// Supported values: px, em, rem.
+$rhythm-unit: 'em' !default;
+
+// The default font family.
+$base-font-family: sans-serif !default;
+
+// Supported Browser versions
+$browser-minimum-versions: (
+  'ie':      8,
+) !default;
 
 /**
  * 1. Set default font family to sans-serif.
@@ -7,7 +30,7 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: $base-font-family; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -55,7 +78,9 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block; /* 1 */
+  @if (map-get($browser-minimum-versions, "ie") <= 8) {
+    display: inline-block; /* 1 */
+  }
   vertical-align: baseline; /* 2 */
 }
 
@@ -69,12 +94,20 @@ audio:not([controls]) {
   height: 0;
 }
 
+@if (map-get($browser-minimum-versions, "ie") <= 10) {
+  /**
+   * Address `[hidden]` styling not present in IE 8/9/10.
+   */
+
+  [hidden] {
+    display: none;
+  }
+}
+
 /**
- * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
 
-[hidden],
 template {
   display: none;
 }
@@ -82,12 +115,14 @@ template {
 /* Links
    ========================================================================== */
 
-/**
- * Remove the gray background color from active links in IE 10.
- */
+@if (map-get($browser-minimum-versions, "ie") <= 10) {
+  /**
+   * Remove the gray background color from active links in IE 10.
+   */
 
-a {
-  background-color: transparent;
+  a {
+    background-color: transparent;
+  }
 }
 
 /**
@@ -133,17 +168,19 @@ dfn {
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: if($rhythm-unit == "px", $h1-font-size, ($h1-font-size / $base-font-size)#{$rhythm-unit});
+  margin: if($rhythm-unit == "px", $base-line-height, ($base-font-size / $base-line-height)#{$rhythm-unit}) 0;
 }
 
-/**
- * Address styling not present in IE 8/9.
- */
+@if (map-get($browser-minimum-versions, "ie") <= 9) {
+  /**
+   * Address styling not present in IE 8/9.
+   */
 
-mark {
-  background: #ff0;
-  color: #000;
+  mark {
+    background: #ff0;
+    color: #000;
+  }
 }
 
 /**
@@ -177,20 +214,24 @@ sub {
 /* Embedded content
    ========================================================================== */
 
-/**
- * Remove border when inside `a` element in IE 8/9/10.
- */
+@if (map-get($browser-minimum-versions, "ie") <= 10) {
+  /**
+   * Remove border when inside `a` element in IE 8/9/10.
+   */
 
-img {
-  border: 0;
+  img {
+    border: 0;
+  }
 }
 
-/**
- * Correct overflow not hidden in IE 9/10/11.
- */
+@if (map-get($browser-minimum-versions, "ie") <= 11) {
+  /**
+   * Correct overflow not hidden in IE 9/10/11.
+   */
 
-svg:not(:root) {
-  overflow: hidden;
+  svg:not(:root) {
+    overflow: hidden;
+  }
 }
 
 /* Grouping content
@@ -388,7 +429,9 @@ fieldset {
  */
 
 legend {
-  border: 0; /* 1 */
+  @if (map-get($browser-minimum-versions, "ie") <= 11) {
+    border: 0; /* 1 */
+  }
   padding: 0; /* 2 */
 }
 

@@ -1,0 +1,5 @@
+{
+  "name": "Normalize-libsass",
+  "description": "This is the libsass compatible version of Normalize.css.",
+  "tags": ["normalize", "reset", "typography", "design", "ui"]
+}
