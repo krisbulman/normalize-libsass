@@ -78,7 +78,7 @@ audio,
 canvas,
 progress,
 video {
-  @if (map-get($browser-minimum-versions, "ie") <= 8) {
+  @if (map-get($browser-minimum-versions, "ie") <= 9) {
     display: inline-block; /* 1 */
   }
   vertical-align: baseline; /* 2 */
@@ -168,8 +168,8 @@ dfn {
  */
 
 h1 {
-  font-size: if($rhythm-unit == "px", $h1-font-size, ($h1-font-size / $base-font-size)#{$rhythm-unit});
-  margin: if($rhythm-unit == "px", $base-line-height, ($base-font-size / $base-line-height)#{$rhythm-unit}) 0;
+  font-size: if($rhythm-unit == "px", $h1-font-size, #{($h1-font-size / $base-font-size)}#{$rhythm-unit});
+  margin: if($rhythm-unit == "px", $base-line-height, #{($base-font-size / $base-line-height)}#{$rhythm-unit}) 0;
 }
 
 @if (map-get($browser-minimum-versions, "ie") <= 9) {
@@ -300,12 +300,14 @@ textarea {
   margin: 0; /* 3 */
 }
 
-/**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
- */
+@if (map-get($browser-minimum-versions, "ie") <= 11) {
+  /**
+   * Address `overflow` set to `hidden` in IE 8/9/10/11.
+   */
 
-button {
-  overflow: visible;
+  button {
+    overflow: visible;
+  }
 }
 
 /**
@@ -364,18 +366,20 @@ input {
   line-height: normal;
 }
 
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
+@if (map-get($browser-minimum-versions, "ie") <= 10) {
+  /**
+   * It's recommended that you don't attempt to style these elements.
+   * Firefox's implementation doesn't respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
 
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
 }
 
 /**
@@ -435,12 +439,14 @@ legend {
   padding: 0; /* 2 */
 }
 
-/**
- * Remove default vertical scrollbar in IE 8/9/10/11.
- */
+@if (map-get($browser-minimum-versions, "ie") <= 11) {
+  /**
+   * Remove default vertical scrollbar in IE 8/9/10/11.
+   */
 
-textarea {
-  overflow: auto;
+  textarea {
+    overflow: auto;
+  }
 }
 
 /**
