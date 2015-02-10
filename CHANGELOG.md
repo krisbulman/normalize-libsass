@@ -1,3 +1,7 @@
+=== normalize-libsass 3.0.2-alpha.3+normalize.3.0.2 (February 9, 2015)
+* Added tests
+* Added browser support function to check against
+
 === normalize-libsass 3.0.2-alpha.2+normalize.3.0.2 (February 9, 2015)
 * Fixed critical bug printing units with libsass
 * Added additional browser support conditionals for ie
