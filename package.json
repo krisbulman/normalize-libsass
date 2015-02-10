@@ -1,7 +1,13 @@
 {
   "name": "normalize-libsass",
-  "version": "3.0.2",
+  "version": "3.0.2-alpha.3+normalize.3.0.2",
   "description": "A libsass compatible sass port of normalize.css, a collection of HTML element and attribute style-normalizations.",
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-sass": "0.17.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-scss-lint": "^0.3.4"
+  },
   "style": "_normalize.scss",
   "files": [
     "_normalize.scss"

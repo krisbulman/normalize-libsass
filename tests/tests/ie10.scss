@@ -1,0 +1,10 @@
+// The Safari 6-specific rules are also needed for IE 9.
+$browser-minimum-versions: (
+  'chrome':  null,
+  'firefox': null,
+  'ie':      11,
+  'safari':  null,
+  'opera':   null
+) !global;
+
+@import "../../normalize";
