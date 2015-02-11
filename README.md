@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/krisbulman/normalize-libsass.svg?branch=3.0.2-alpha.3%2Bnormalize.3.0.2)](https://travis-ci.org/krisbulman/normalize-libsass)
+
 A libsass compatible sass port of normalize.css, a collection of HTML element and attribute style-normalizations.
 
 This project was created because libsass does not import .css files. This can be an annoying problem when using a package manager such as bower. This port also leverages Sass variables for optional customization and inspired by [JohnAlbin's Compass port](https://github.com/JohnAlbin/normalize-scss).
@@ -16,7 +18,7 @@ normalizing.
 ## Install
 
 * Download directly from the [project page](https://github.com/krisbulman/normalize-libsass/releases).
-* Install with [Bower](http://bower.io/): bower install --save git://github.com/krisbulman/normalize-libsass.git#3.0.3-alpha.3+normalize.3.0.2
+* Install with [Bower](http://bower.io/): bower install --save git://github.com/krisbulman/normalize-libsass.git#3.0.2-alpha.3+normalize.3.0.2
 * Install with [Component](http://component.io/): component install krisbulman/normalize-libsass
 
 No other styles should come before _normalize.scss.
