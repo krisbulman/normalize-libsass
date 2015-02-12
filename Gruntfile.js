@@ -13,7 +13,8 @@ module.exports = function(grunt) {
           'tests/controls/ie10.css': 'tests/tests/ie10.scss',
           'tests/controls/ie11.css': 'tests/tests/ie11.scss',
           'tests/controls/safari6.css': 'tests/tests/safari6.scss',
-          'tests/controls/safari7.css': 'tests/tests/safari7.scss'
+          'tests/controls/safari7.css': 'tests/tests/safari7.scss',
+          'tests/controls/strict.css': 'tests/tests/strict.scss'
         }
       }
     },

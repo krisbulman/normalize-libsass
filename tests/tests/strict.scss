@@ -1,0 +1,14 @@
+$base-font-family: Arial, sans-serif !global;
+
+$base-font-size: 24px !global;
+
+$base-line-height: 36px !global;
+
+$h1-font-size: 3 * $base-font-size !global;
+
+$rhythm-unit: 'rem' !global;
+
+// Setting this var should nullify any of the default vars
+$strict-normalize: true !global;
+
+@import '../../normalize';
