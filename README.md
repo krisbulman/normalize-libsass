@@ -1,10 +1,12 @@
 [![Build Status](https://travis-ci.org/krisbulman/normalize-libsass.svg?branch=master)](https://travis-ci.org/krisbulman/normalize-libsass)
 
-A libsass compatible sass port of normalize.css, a collection of HTML element and attribute style-normalizations.
+# normalize-libsass 1.0.0
 
-This project was created because libsass does not import .css files. This can be an annoying problem when using a package manager such as bower. This port also leverages Sass variables for optional customization and inspired by [JohnAlbin's Compass port](https://github.com/JohnAlbin/normalize-scss).
+A libsass compatible Sass port of normalize.css; a collection of HTML element and attribute style-normalizations.
 
-# normalize.css v3
+This project was created because libsass does not currently import .css files. This can be an annoying problem when using a package manager such as bower. This port also leverages Sass variables for optional customization and inspired by [JohnAlbin's Compass port](https://github.com/JohnAlbin/normalize-scss). While this port is compatible with libsass, Ruby Sass 3.3, and Ruby Sass 3.3 + Compass, it does not use vertical rhythm mixins, if you wish to have vertical rhythm integrated in with your reset, then use John's Compass port.
+
+# normalize.css v3.0.2
 
 Normalize.css is a customisable CSS file that makes browsers render all
 elements more consistently and in line with modern standards.
@@ -32,8 +34,8 @@ To use the libsass port of Normalize, simply:
 1. Copy the _normalize.scss file to your Sass directory
 2. Import the partial into your main Sass file with @import "normalize";
 and follow the "About normalize.css" article's suggestions:
-  * Approach 1: use _normalize.scss as a starting point for your own project's base Sass, customising the values to match the design's requirements.
-  * Approach 2: include _normalize.scss untouched and build upon it, overriding the defaults later in your Sass when necessary.
+  * Approach 1: Use _normalize.scss as a starting point for your own project's base Sass, customising the values to match the design's requirements. See the included ```!default``` variables that can be customized in your project.
+  * Approach 2: Include _normalize.scss untouched and build upon it, overriding the defaults later in your Sass when necessary. Set ```$strict-normalize: true;``` in your project.
 
 ## What does it do?
 
