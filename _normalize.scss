@@ -1,5 +1,5 @@
 ////
-/// normalize-libsass 1.0.0
+/// normalize-libsass 1.0.1
 /// MIT/GPLv2 License
 /// lb.cm/normalize-libsass
 ////
@@ -283,7 +283,7 @@ sub {
 /* Grouping content
    ========================================================================== */
 
-@if normalize-browser-support('ie', 10) or normalize-browser-support('safari', 6) {
+@if normalize-browser-support('ie', 9) or normalize-browser-support('safari', 6) {
   /**
    * Address margin not present in IE 8/9 and Safari.
    */
