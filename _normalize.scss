@@ -55,7 +55,7 @@ $normalize-base-font-family: if($strict-normalize, sans-serif, $base-font-family
 ///
 /// @return {Bool} - If browser is null or valid returns true.
 @function normalize-browser-support($browser, $version) {
-  // Allows the Compass function to take over if installed.
+  // If browser is not null then check for support
   @if map-get($browser-min-version, $browser) {
     $supported-version: map-get($browser-min-version, $browser);
     // Pass if browser is supported or strict-normalize is on
@@ -68,6 +68,35 @@ $normalize-base-font-family: if($strict-normalize, sans-serif, $base-font-family
   }
   // Pass if browser is null
   @return true;
+}
+
+/// Convert one unit into another
+/// @author Hugo Giraudel
+///
+/// @param {Number} $value - Initial value
+/// @param {String} $unit - Desired unit
+///
+/// @return {Number}
+/// @throw Error if `$unit` does not exist or if units are incompatible.
+@function normalize-convert-unit($value, $unit) {
+  // scss-lint:disable ZeroUnit
+  $units: (
+    'px': 0px,
+    'cm': 0cm,
+    'mm': 0mm,
+    '%': 0%,
+    'in': 0in,
+    'em': 0em,
+    'rem': 0rem,
+    'pt': 0pt
+  );
+  // scss-lint:enable ZeroUnit
+
+  @if map-has-key($units, $unit) {
+    @return map-get($units, $unit) + $value;
+  }
+
+  @error "Unknown unit `#{$unit}`.";
 }
 
 /**
@@ -214,8 +243,8 @@ dfn {
 */
 
 h1 {
-  font-size: if($normalize-rhythm-unit == 'px', $h1-font-size, #{($normalize-h1-font-size / $normalize-base-font-size)}#{$normalize-rhythm-unit});
-  margin: if($normalize-rhythm-unit == 'px', $base-line-height, #{($normalize-base-font-size / $normalize-base-line-height)}#{$normalize-rhythm-unit}) 0;
+  font-size: normalize-convert-unit(($normalize-h1-font-size / $normalize-base-font-size), $normalize-rhythm-unit);
+  margin: normalize-convert-unit(($normalize-base-font-size / $normalize-base-line-height), $normalize-rhythm-unit) 0;
 }
 
 @if normalize-browser-support('ie', 9) {
