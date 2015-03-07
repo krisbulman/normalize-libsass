@@ -1,3 +1,12 @@
+=== normalize-libsass 1.0.2 (March 6, 2015)
+* Added convert-units function to keep it real with Sass units (Thanks @HugoGiraudel)
+
+=== normalize-libsass 1.0.1 (February 12, 2015)
+* Fixes IE version for figure element margin
+
+=== normalize-libsass 1.0.0 (February 12, 2015)
+Initial stable release published as npm module
+
 === normalize-libsass 3.0.2-alpha.3+normalize.3.0.2 (February 9, 2015)
 * Added tests
 * Added browser support function to check against

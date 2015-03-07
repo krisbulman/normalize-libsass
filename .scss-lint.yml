@@ -1,7 +1,6 @@
 # From http://sass-guidelin.es/#scss-lint
 
 linters:
-
   BangFormat:
     enabled: true
     space_before_bang: true

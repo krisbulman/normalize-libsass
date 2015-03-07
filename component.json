@@ -2,7 +2,7 @@
   "name": "normalize-libsass",
   "repo": "krisbulman/normalize-libsass",
   "description": "A libsass compatible sass port of normalize.css, a collection of HTML element and attribute style-normalizations.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": [
     "Nicolas Gallagher",
     "Kris Bulman"

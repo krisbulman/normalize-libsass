@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/krisbulman/normalize-libsass.svg?branch=master)](https://travis-ci.org/krisbulman/normalize-libsass)
 
-# normalize-libsass 1.0.1
+# normalize-libsass 1.0.2
 
 A libsass compatible Sass port of normalize.css; a collection of HTML element and attribute style-normalizations.
 

@@ -1,6 +1,6 @@
 {
   "name": "normalize-libsass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A libsass compatible sass port of normalize.css, a collection of HTML element and attribute style-normalizations.",
   "devDependencies": {
     "grunt": "~0.4",
