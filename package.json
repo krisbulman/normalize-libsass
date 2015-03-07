@@ -4,7 +4,7 @@
   "description": "A libsass compatible sass port of normalize.css, a collection of HTML element and attribute style-normalizations.",
   "devDependencies": {
     "grunt": "~0.4",
-    "grunt-sass": "0.17.0",
+    "grunt-sass": "^0.18.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-scss-lint": "^0.3.4"
   },
