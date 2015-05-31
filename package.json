@@ -10,6 +10,7 @@
   },
   "style": "_normalize.scss",
   "files": [
+    "LICENSE.md",
     "_normalize.scss"
   ],
   "homepage": "https://github.com/krisbulman/normalize-libsass",
