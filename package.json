@@ -17,6 +17,7 @@
     "type": "git",
     "url": "git://github.com/krisbulman/normalize-libsass.git"
   },
+  "main": "_normalize.scss",
   "author": [
     "Nicolas Gallagher",
     "Kris Bulman"
