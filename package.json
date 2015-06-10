@@ -1,6 +1,6 @@
 {
   "name": "normalize-libsass",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A libsass compatible sass port of normalize.css, a collection of HTML element and attribute style-normalizations.",
   "devDependencies": {
     "grunt": "~0.4",
@@ -10,6 +10,7 @@
   },
   "style": "_normalize.scss",
   "files": [
+    "LICENSE.md",
     "_normalize.scss"
   ],
   "homepage": "https://github.com/krisbulman/normalize-libsass",
@@ -17,6 +18,7 @@
     "type": "git",
     "url": "git://github.com/krisbulman/normalize-libsass.git"
   },
+  "main": "_normalize.scss",
   "author": [
     "Nicolas Gallagher",
     "Kris Bulman"

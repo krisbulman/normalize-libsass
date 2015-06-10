@@ -1,3 +1,8 @@
+=== normalize-libsass 1.0.3 (May 31, 2015)
+
+* Remove unnecessary vendor prefixes.
+* Add `main` property.
+
 === normalize-libsass 1.0.2 (March 6, 2015)
 * Added convert-units function to keep it real with Sass units (Thanks @HugoGiraudel)
 
@@ -22,6 +27,11 @@ Initial stable release published as npm module
 == normalize.css change log
 
 === HEAD
+
+=== 3.0.3 (March 30, 2015)
+
+* Remove unnecessary vendor prefixes.
+* Add `main` property.
 
 === 3.0.2 (October 4, 2014)
 
